@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PS5_4</title>
+</head>
+<body>
+    <p>Click the button to enter the points<button onclick="distance()">Click to enter values</button></p>
+    <p id="dist"></p>
+    <script>
+        function distance()
+        {
+            var x1=prompt("Enter x co-ordinate of first point","0");
+            var y1=prompt("Enter y co-ordinate of first point","0");
+            var x2=prompt("Enter x co-ordinate of second point","0");
+            var y2=prompt("Enter y co-ordinate of second point","0");
+            var dist=Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2));
+            document.getElementById("dist").innerHTML="Distance between given two points is "+dist+" units";
+        }
+    </script>
+</body>
+</html>

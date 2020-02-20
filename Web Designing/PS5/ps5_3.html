@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PS5_3</title>
+</head>
+<body>
+    <p>Enter the principal,interest ant time by clicking the button below</p>
+    <button onclick="inp()">Input Values</button>
+    <p id="op"></p>
+    <script>
+        function inp()
+        {
+            var p=prompt("Enter the principal","0");
+            var r=prompt("Enter the interest rate","0");
+            var n=prompt("Enter the years","0");
+            var i=(p*n*r)/100;
+            var ci=p*Math.pow((1+(r/10)),n);
+            document.getElementById("op").innerHTML="Simple interest for given values is "+i+" and Compound interest for given values is "+ci;
+        }
+    </script>
+</body>
+</html>
