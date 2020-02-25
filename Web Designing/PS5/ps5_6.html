@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PS5_6</title>
+</head>
+<body>
+    <p>Enter first number:<input type="number" id="fnum" value="0"></p>
+    <p>Enter second number:<input type="number" id="snum" value="0"></p>
+    <button onclick=func()>Click me</button>
+    <p id="sum"></p>
+    <p id="product"></p>
+    <p id="diff"></p>
+    <p id="quotient"></p>
+    <script>
+        function func()
+        {
+            document.getElementById("sum").innerHTML=parseInt(document.getElementById("fnum").value)+parseInt(document.getElementById("snum").value);
+            document.getElementById("product").innerHTML=document.getElementById("fnum").value*document.getElementById("snum").value;
+            document.getElementById("diff").innerHTML=document.getElementById("fnum").value-document.getElementById("snum").value;
+            document.getElementById("quotient").innerHTML=document.getElementById("fnum").value/document.getElementById("snum").value;  
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PS5_5</title>
+</head>
+<body>
+    <p>Start entering triangle values by clicking the button<button onclick=area()>Values</button></p>
+    <p id="area"></p>
+    <script>
+        function area()
+        {
+            var a=prompt("Enter side 1 of triangle","0");
+            var b=prompt("Enter side 2 of triangle","0");
+            var c=prompt("Enter side 3 of triangle","0");
+            var s=(parseInt(a)+parseInt(b)+parseInt(c))/2;
+            var area=Math.sqrt(s*(s-a)*(s-b)*(s-c));
+            document.getElementById("area").innerHTML="Area of triangle is"+area;
+        }
+    </script>
+</body>
+</html>

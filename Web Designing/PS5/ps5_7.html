@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PS5_7</title>
+</head>
+<body>
+    <p>First Number<input id="first" type="number" value="0"></p>
+    <p>Second Number<input id="second" type="number" value="0"></p>
+    <p>Third Number<input id="third" type="number" value="0"></p>
+    <button onclick=sum()>Sum</button>
+    <button onclick=product()>Product</button>
+    <button onclick=difference()>Difference</button>
+    <button onclick=quotient()>Quotient</button>
+    <script>
+        function sum()
+        {
+            alert(parseInt(document.getElementById("first").value)+parseInt(document.getElementById("second").value)+parseInt(document.getElementById("third")));
+        }
+    </script>
+</body>
+</html>
